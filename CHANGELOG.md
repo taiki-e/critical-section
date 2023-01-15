@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 No unreleased changes yet
+- MSRV changed to `1.50` when `std` feature is disabled.
 
 ## [v1.1.3] - 2024-08-22
 

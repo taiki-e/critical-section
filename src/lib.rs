@@ -1,5 +1,6 @@
 #![cfg_attr(not(feature = "std"), no_std)]
-#![doc = include_str!("../README.md")]
+// https://github.com/rust-lang/rust/issues/82768
+#![cfg_attr(doc, cfg_attr(doc, doc = include_str!("../README.md")))]
 
 mod mutex;
 #[cfg(feature = "std")]
