@@ -12,11 +12,11 @@ jobs:
     strategy:
       matrix:
         include:
-          - rust: 1.54
+          - rust: '1.50'
             features: ''
-          - rust: 1.63
+          - rust: '1.63'
             features: ''
-          - rust: 1.63
+          - rust: '1.63'
             features: 'std'
     steps:
       - uses: actions/checkout@v2
