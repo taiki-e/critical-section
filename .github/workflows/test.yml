@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - rust: '1.50'
+          - rust: '1.46'
             features: ''
           - rust: '1.63'
             features: ''
