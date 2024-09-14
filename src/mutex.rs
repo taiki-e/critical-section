@@ -181,7 +181,7 @@ impl<T: Default> Mutex<RefCell<T>> {
     #[inline]
     #[track_caller]
     pub fn take<'cs>(&'cs self, cs: CriticalSection<'cs>) -> T {
-        self.borrow(cs).take()
+        self.borrow(cs).replace(Default::default())
     }
 }
 
